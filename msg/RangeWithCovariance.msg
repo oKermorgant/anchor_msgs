@@ -1,6 +1,9 @@
-# This is the possibly noised measured range [m] between header.frame_id and child_frame_id
+# This is the possibly noised measured range [m] between two frames:
+# - header.frame_id: the frame of the beacon
+# - moving_frame: the frame attached to the robot
+
 std_msgs/Header header
-string child_frame_id
+string moving_frame
 float64 range
 float64 range_min 0.
 float64 range_max 100.
